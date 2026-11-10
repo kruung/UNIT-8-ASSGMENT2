@@ -1,0 +1,8 @@
+{
+  "CMS": "strapi",
+  "CMS_URL": "https://your-cms.example.com",
+  "CMS_SPACE": "your-space-id",
+  "CMS_PROJECT": "your-project-id",
+  "CMS_DATASET": "production",
+  "CMS_TOKEN": "your-read-only-token"
+}
