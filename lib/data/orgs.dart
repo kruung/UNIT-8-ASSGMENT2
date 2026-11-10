@@ -41,7 +41,7 @@ enum ServerMode { success, empty, error, random }
 class OrgRepository {
   OrgRepository({
     this.mode = ServerMode.success,
-    this.delay = const Duration(seconds: 2),
+    this.delay = Duration.zero,
   });
 
   ServerMode mode;
@@ -49,7 +49,9 @@ class OrgRepository {
   final _random = Random();
 
   Future<List<Org>> fetchOrgs() async {
-    await Future<void>.delayed(delay);
+    if (delay > Duration.zero) {
+      await Future<void>.delayed(delay);
+    }
     final result = mode == ServerMode.random
         ? ServerMode.values[_random.nextInt(3)]
         : mode;
