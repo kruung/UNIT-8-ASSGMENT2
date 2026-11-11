@@ -1,8 +1,8 @@
 
 # CICT Org Fair
 
-GitHub repository: TBD
-Deployed Web App URL: TBD
+GitHub repository: https://github.com/kruung/UNIT-8-ASSGMENT2
+Deployed Web App URL: https://kruung.github.io/UNIT-8-ASSGMENT2/ 
 
 A Flutter project for the CICT Organization Fair.
 
